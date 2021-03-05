@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSI | Register</title>
+    <link rel="shortcut icon" href="https://media.discordapp.net/attachments/785188133419221022/813225879009624074/logo.png" />
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/style-h2.css">
+    <link rel="stylesheet" href="public/css/style-h.css">
+
+</head>
+<body>
+    <div id="register-sheet" class="position-absolute top-50 start-50 translate-middle">
+        <h1>Register</h1>
+        <form id="register-inputs" action="main.html">
+
+            <div class="text-box" id="username-id">
+                <i class="fa fa-user i-for-connect" aria-hidden="true"></i>
+                <input type="username" placeholder="Username" name="Username" class="connect-items">
+            </div>
+
+            <div class="text-box" id="email-id">
+                <i class="fa fa-user i-for-connect" aria-hidden="true"></i>
+                <input type="email" placeholder="Email" name="email" class="connect-items">
+            </div>
+
+            <div class="text-box" id="password-id">
+                <i class="fa fa-lock i-for-connect" aria-hidden="true"></i>
+                <input type="password" placeholder="Password" name="password" class="connect-items">         
+            </div>
+
+            <div class="text-box" id="confirmpassword-id">
+                <i class="fa fa-lock i-for-connect" aria-hidden="true"></i>
+                <input type="password" placeholder="Confirm password" name="confirm password" class="connect-items">
+            </div>
+        
+        
+            <div id="connect-valid-btn">
+                <button type="submit" value="Validation" class="btn btn-outline-primary btn-connect-login">Register</button>
+            
+            </div>
+            <a href="login">Déjà un compte ?</a>
+        </form>
+    
+    </div>
+    
+    <script src="public/js/app-register.js"></script>
+</body>
+</html>

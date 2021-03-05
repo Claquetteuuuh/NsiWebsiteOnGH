@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSI | Documentation</title>
+    <link rel="shortcut icon" href="https://media.discordapp.net/attachments/785188133419221022/813225879009624074/logo.png" />
+    <link rel="stylesheet" href="public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    
+  </head>
+  <body>
+
+
+    <!-- header bar start -->
+
+    <nav id="header-bar" class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <img
+          src="/sources/logo-head.png"
+          alt=""
+          width="140px"
+          height="45px"
+          id="logo-head"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="header-items">
+            <li class="nav-item">
+              <a
+                class="nav-link active li-items"
+                aria-current="page"
+                href="/"
+                >Main</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link li-items" href="#">Doc</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle li-items"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Languages
+              </a>
+              <ul
+                id="dropdown-header"
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item li-items" href="javascript"
+                    >JavaScript</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item li-items" href="python"
+                    >Python</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button
+            onclick='callConnect()'
+            class="btn btn-light"
+            id="header-button"
+          >
+            Connexion
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- header bar end -->
+
+    <div id="global-page">
+      <div class="container-fluid" id="title-Js">
+        <h1>
+          <span>Nsi </span>
+          <span>ClassRoom </span>
+          <span>Documentation</span>
+        </h1>
+      </div>
+
+      <ul class="medias">
+        <li class="bulle">
+          <a href="https://github.com/Claquetteuuuh/" target="_blank">
+            <img
+              src="https://cdn.discordapp.com/attachments/785188133419221022/813224986349142036/github-logo.png"
+              alt="logo de github"
+              class="media-logo"
+            />
+          </a>
+        </li>
+
+        <li class="bulle">
+          <a href="https://discord.gg/WAYzbCteNC" target="_blank">
+            <img
+              src="https://cdn.discordapp.com/attachments/785188133419221022/813224990711087154/discord-logo.png"
+              alt="logo de discord"
+              class="media-logo"
+            />
+          </a>
+        </li>
+
+        <li class="bulle">
+          <a href="https://www.instagram.com/404/" target="_blank">
+            <img
+              src="https://media.discordapp.net/attachments/785188133419221022/813224987397849098/insta-logo.png?width=675&height=675"
+              alt="logo de instagram"
+              class="media-logo"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <script>
+        
+        const titreSpans = document.querySelectorAll("h1 span");
+        const medias = document.querySelectorAll(".bulle a img");
+  
+        window.addEventListener("load", () => {
+          // creation de la variable timeline
+          const TL = gsap.timeline({ pause: true });
+  
+          // creation des animation, sec, parametre css
+            TL
+            .staggerFrom(titreSpans,1,{ top: -50, opacity: 0, ease: "power2.out" },0.3)
+            .staggerFrom(medias, 1, { right: -50, opacity: 0, ease: "power2.out" }, 0.3);
+  
+          TL.play();
+        });
+      </script>
+
+    <!-- sheet -->
+    <div id="sheet" class="container-fluid">
+      <div id="search-bar" class="col-md-12 col-sm-12">
+        <input
+          type="text"
+          placeholder="Terme à Rechercher"
+          id="input-search"
+          name="q"
+          aria-label="Search through site content"
+        />
+
+        <button
+          onclick="searchTheWord()"
+          class="btn btn-light"
+          id="search-button"
+        >
+          Rechercher
+        </button>
+      </div>
+      
+      <div id="li-doc">
+        <h4>
+          La documentation logicielle est un texte écrit qui accompagne le
+          logiciel informatique. Elle explique comment le logiciel fonctionne,
+          et/ou comment on doit l'employer. Le terme peut avoir des
+          significations différentes pour des personnes de différents profils.
+        </h4>
+        <ul>
+          <li>
+            
+            <p>
+              Pour la documentation en JavaScript rendez vous
+              <a
+                href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
+                target="_BLANK"
+                >ici</a
+              >
+              !
+            </p>
+          </li>
+          <li>
+            
+            <p>
+              Pour la documentation en Python rendez vous
+              <a href="https://docs.python.org/3/" target="_BLANK">ici</a> !
+            </p>
+        
+          </li>  
+          
+        </ul>
+      </div>
+
+      
+    </div>
+
+    <script>
+      function callConnect() {
+      window.open("login");
+      }
+      function searchTheWord() {
+        var messageSaisie = document.getElementById("input-search").value; //get the message in the input box
+        if (messageSaisie != "") {
+          // if the message isnt null
+          var url = "https://fr.wikipedia.org/wiki/" + messageSaisie; // create the Url
+          window.open(url, "_blank"); // open the url in a new windows
+        } else {
+          // if the message is null
+          alert("Tu dois mettre un argument afin de le rechercher...");
+        }
+      }
+    </script>
+    
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    <footer class="center">
+      <p>Copyright © 2021 BIABIANY, PHIBEL, LEMAITRE</p>
+    </footer>
+
+    
+  </body>
+</html>

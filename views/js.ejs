@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSI | JavaScript</title>
+    <link rel="shortcut icon" href="https://media.discordapp.net/attachments/785188133419221022/813225879009624074/logo.png" />
+    <link rel="stylesheet" href="public/css/bootstrap.min.css" />
+    <link href="public/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <!-- <div class="cursor"></div> -->
+
+    <!-- header bar start -->
+
+    <nav id="header-bar" class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <img
+          src="/sources/logo-head.png"
+          alt=""
+          width="140px"
+          height="45px"
+          id="logo-head"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="header-items">
+            <li class="nav-item">
+              <a
+                class="nav-link active li-items"
+                aria-current="page"
+                href="/"
+                >Main</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link li-items" href="documentation">Doc</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle li-items"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Languages
+              </a>
+              <ul
+                id="dropdown-header"
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item li-items" href="javascript"
+                    >JavaScript</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item li-items" href="python"
+                    >Python</a
+                  >
+                </li>
+              </ul>
+            </li>
+            
+          </ul>
+          <button
+            onclick="callConnect()"
+            class="btn btn-light"
+            id="header-button"
+          >
+            Connexion
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- header bar end -->
+
+    <div id="global-page">
+      <div class="container-fluid" id="title-Js">
+        <h1>
+          <span>Apprendre </span>
+          <span>le </span>
+          <span>JavaScript</span>
+        </h1>
+      </div>
+
+      <ul class="medias">
+        <li class="bulle">
+          <a href="https://github.com/Claquetteuuuh/" target="_blank">
+            <img
+              src="https://cdn.discordapp.com/attachments/785188133419221022/813224986349142036/github-logo.png"
+              alt="logo de github"
+              class="media-logo"
+            />
+          </a>
+        </li>
+
+        <li class="bulle">
+          <a href="https://discord.gg/WAYzbCteNC" target="_blank">
+            <img
+              src="https://cdn.discordapp.com/attachments/785188133419221022/813224990711087154/discord-logo.png"
+              alt="logo de discord"
+              class="media-logo"
+            />
+          </a>
+        </li>
+
+        <li class="bulle">
+          <a href="https://www.instagram.com/404/" target="_blank">
+            <img
+              src="https://media.discordapp.net/attachments/785188133419221022/813224987397849098/insta-logo.png?width=675&height=675"
+              alt="logo de instagram"
+              class="media-logo"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <div class="exemple">
+        <p></p>
+      </div>
+
+      <div class="container-fluid" id="sheet-js">
+        <div class="row" id="p-adapt">
+          <div id="search-bar" class="col-md-12 col-sm-12">
+            <input
+              type="text"
+              placeholder="Terme à Rechercher"
+              autocomplete="off"
+              id="input-search"
+              name="q"
+              aria-label="Search through site content"
+            />
+
+            <button
+              onclick="searchTheWord()"
+              class="btn btn-light"
+              id="search-button"
+            >
+              Rechercher
+            </button>
+            
+          </div>
+          <!-- end of the presentation page -->
+
+          <!-- start classroom -->
+          <div class="bloc-present">
+            <h4 id="animJs"></h4>
+            <br/>
+            <p>
+              Le JavaScript souvent abrégé js est un Languages de script utiliser en grande partie sur le web, mais qui s'est tellement démocratisé qu'on le retrouve dans des usages totalement différents comme avec le moteur de jeu united qui permet de l'utiliser comme un langage de programmation.
+            </p>
+          </div>
+
+          <div class="dropdown-buttons">
+            <div class="dropdown-js">
+              <button class="bloc-top">
+                <span>Les Variables</span>
+                <img src="https://cdn.discordapp.com/attachments/785188133419221022/813225450352148489/deply-img.png" alt="deply">
+              </button>
+
+              <div class="bloctext">
+                <p class="text-center">
+                  Une variable est donc un conteneur ou un espace de stockage temporaire qui va pouvoir stocker une valeur.
+                  <br>
+                  Pour déclarer une variable vous devez d'abord utiliser un des mots clé <span style="color: rgb(151, 0, 0);">let</span> ou <span style="color: rgb(151, 0, 0);">var</span>, suivi du nom de votre variable (en respectant le <span style="text-decoration: underline;"><a href="https://fr.wikipedia.org/wiki/Camel_case">CamelCase</a></span> ) avec la valeur de la variable apès un =.
+                  <img src="https://cdn.discordapp.com/attachments/785188184115511346/812773776269770752/unknown.png" style="border: 2px solid;margin-top: 1%;border-radius: 5px;">
+                </p>
+              </div>
+            </div>
+
+            <div class="dropdown-js not-first">
+              <button class="bloc-top">
+                <span>Les fonctions</span>
+                <img src="https://cdn.discordapp.com/attachments/785188133419221022/813225450352148489/deply-img.png" alt="deply">
+              </button>
+              <div class="bloctext">
+                <p class="text-center">
+                  Une fonction correspond à un bloc de code nommé et réutilisable et dont le but est d’effectuer une tâche précise. En JavaScript, comme dans la plupart des langages les supportant, nous allons très souvent utiliser des fonctions car celles-ci possèdent de nombreux atouts que l’on va énumérer par la suite.
+                </br>
+                Pour créer une fonction en JavaScript il vous suffit d'utiliser le mot clé <span style="color: rgb(151, 0, 0);">function</span> suivi du nom de votre fonction, de parentheses ( dans lesquelles vous placerez vos paramètres ) puis des accolades.  
+                <img src="https://cdn.discordapp.com/attachments/785188184115511346/812771995006926909/unknown.png" style="border: 2px solid;margin-top: 1%;border-radius: 5px;"> 
+              </p>
+              </div>
+            </div>
+            <div class="dropdown-js not-first">
+              <button class="bloc-top">
+                <span>Les conditions</span>
+                <img src="https://cdn.discordapp.com/attachments/785188133419221022/813225450352148489/deply-img.png" alt="deply">
+              </button>
+              <div class="bloctext">
+                <p class="text-center">
+                  Les structures de contrôle conditionnelles (ou plus simplement conditions) vont nous permettre d’exécuter une série d’instructions si une condition donnée est vérifiée ou (éventuellement) une autre série d’instructions si elle ne l’est pas.
+                </br>
+                  en JavaScript les conditions auquels nous avons accès sont : 
+                  
+                  <ul>
+                    <li class="volontary"><span style="color: rgb(151, 0, 0);">if</span> (si)</li>
+                    <li class="volontary"><span style="color: rgb(151, 0, 0);">if else</span> (si, sinon) </li>
+                    <li class="volontary"><span style="color: rgb(151, 0, 0);">if elseif else</span> (si, sinon si, sinon) </li>
+                  </ul>
+                  <p style="margin-top: 0px;">Pour les utiliser il suffit de placer le mot clé avant des parenthèses suivi d'accolades.
+                    <img src="https://cdn.discordapp.com/attachments/785188184115511346/812777073507696640/unknown.png" style="border: 2px solid;margin-top: 1%;border-radius: 5px;margin-bottom: 20px;"> </p>
+                </p>
+              </div>
+            </div>
+            <div class="dropdown-js not-first">
+              <button class="bloc-top">
+                <span>Les tableaux</span>
+                <img src="https://cdn.discordapp.com/attachments/785188133419221022/813225450352148489/deply-img.png" alt="deply">
+              </button>
+              <div class="bloctext">
+                <p class="text-center">
+                  Les tableaux sont des éléments qui vont pouvoir contenir plusieurs valeurs. En JavaScript, comme les tableaux sont avant tout des objets, il peut paraitre évident qu’un tableau va pouvoir contenir plusieurs valeurs comme n’importe quel objet.
+                  </br>
+                  Le principe des tableaux est relativement simple : un indice ou clef va être associé à chaque valeur du tableau. Pour récupérer une valeur dans le tableau, on va utiliser les indices qui sont chacun unique dans un tableau.
+                  </br>
+                  Les tableaux vont s’avérer très pratique lorsqu’on voudra stocker des listes de valeurs dans une variable et pour pouvoir ensuite accéder à certaines valeurs en particulier.
+                  </br>
+                  Pour creer un tableau en JavaScript il suffit de le définir de la même manière qu'une variable mais en utilisant des crochets.
+                </br>
+                  <img src="https://cdn.discordapp.com/attachments/785188184115511346/812779178264625173/unknown.png" style="border: 2px solid;margin-top: 1%;border-radius: 5px;"> 
+                </p>
+              </div>
+            </div>
+            <div class="dropdown-js not-first">
+              <button class="bloc-top">
+                <span>Les boucles</span>
+                <img src="https://cdn.discordapp.com/attachments/785188133419221022/813225450352148489/deply-img.png" alt="deply">
+              </button>
+              <div class="bloctext">
+                <p class="text-center">
+                  Les boucles vont nous permettre d’exécuter plusieurs fois un bloc de code, c’est-à-dire d’exécuter un code « en boucle » tant qu’une condition donnée est vérifiée et donc ainsi nous faire gagner beaucoup de temps dans l’écriture de nos scripts.
+                  </br>
+                  Nous disposons de sept boucles différentes en JavaScript :
+                  </br>
+                  <ul>
+                    <li class="volontary"><span style="color: rgb(151, 0, 0);">while</span> (tant que)</li>
+                    <li class="volontary"><span style="color: rgb(151, 0, 0);">do… while</span> (faire… tant que) </li>
+                    <li class="volontary"><span style="color: rgb(151, 0, 0);">for</span> (pour) </li>
+                    <li class="volontary"><span style="color: rgb(151, 0, 0);">for… in</span> (pour… dans) </li>
+                    <li class="volontary"><span style="color: rgb(151, 0, 0);">for… of</span> (pour… parmi) </li>
+                    <li class="volontary" style="max-width: 1000px;"><span style="color: rgb(151, 0, 0);"> for await… of</span> (pour -en attente-… parmi) </li>
+                    <li class="volontary"><span style="color: rgb(151, 0, 0);"> for each</span> (pour chaque) </li>
+                  </ul>
+                  </br>
+                  <p>
+                    Pour les utiliser placé le mot clé avant des parenthèses, dans   lesquelles vous mettez la condition à respecter le tout suivi d'accolades 
+                    </br>
+                    <img src="https://cdn.discordapp.com/attachments/785188184115511346/813154953824436254/unknown.png" style="border: 2px solid;margin-top: 1%;border-radius: 5px;margin-bottom: 20px;"> 
+                  </p>
+                </p>
+              </div>
+            </div>
+            <div class="dropdown-js not-first">
+              <button class="bloc-top">
+                <span>Les objets</span>
+                <img src="https://cdn.discordapp.com/attachments/785188133419221022/813225450352148489/deply-img.png" alt="deply">
+              </button>
+              <div class="bloctext">
+                <p class="text-center">
+                  Un objet est un ensemble cohérent de propriétés et de méthodes. Le JavaScript dispose d’objets natifs (objets prédéfinis) qui possèdent des propriétés et des méthodes qu’on va pouvoir directement utiliser et nous permet également de définir nos propres objets.
+                  </br>
+                  Nous pouvons créer des objets de 4 manières différentes en JavaScript. On va pouvoir :
+                  </br>
+                  <ul>
+                    <li class="volontary">Créer un objet littéral ;</li>
+                    <li class="volontary" style="max-width: 1000px;">Utiliser le constructeur <span style="color: rgb(151, 0, 0);">Object() </span>;</li>
+                    <li class="volontary" style="max-width: 1000px;">Utiliser une fonction constructeur personnalisée ;</li>
+                    <li class="volontary">Utiliser la méthode <span style="color: rgb(151, 0, 0);"> create().</span></li>
+                  </ul>
+                  </br>
+                  <p>exemple d'objet littéral :
+                    </br>
+                    <img src="https://cdn.discordapp.com/attachments/785188184115511346/813157358778843197/unknown.png" style="border: 2px solid;margin-top: 1%;border-radius: 5px;margin-bottom: 20px;"> 
+                  </p>
+                  
+                </p>
+              </div>
+            </div>
+            <div class="dropdown-js not-first">
+              <button class="bloc-top">
+                <span>Recuperation d'éléments html</span>
+                <img src="https://cdn.discordapp.com/attachments/785188133419221022/813225450352148489/deply-img.png" alt="deply">
+              </button>
+              <div class="bloctext">
+                <p class="text-center">
+                  Chaque élément du DOM est un objet JavaScript avec ses propriétés et ses fonctions pour le manipuler. Mais avant de commencer les manipulations, nous allons voir les différentes façons de retrouver des éléments dans notre page.
+                  <ul>
+                    <li>
+                      <span style="color: rgb(151, 0, 0); font-size: 1.6em;">document.getElementById()</span>
+                      </br>
+                      <img src="https://media.discordapp.net/attachments/785188184115511346/813227602431967302/unknown.png" style="border: 2px solid black;margin-top: 1%;border-radius: 5px;margin-bottom: 20px;">
+                    </li>
+                    <li>
+                      <span style="color: rgb(151, 0, 0); font-size: 1.6em;">document.getElementsByClassName()</span>
+                      </br>
+                      <img src="https://media.discordapp.net/attachments/785188184115511346/813228386721464320/unknown.png" style="border: 2px solid black;margin-top: 1%;border-radius: 5px;margin-bottom: 20px;">
+                    </li>
+                    <li>
+                      <span style="color: rgb(151, 0, 0); font-size: 1.6em;">document.querySelector()</span>
+                      </br>
+                      <img src="https://media.discordapp.net/attachments/785188184115511346/813229433255100486/unknown.png" style="border: 2px solid black;margin-top: 1%;border-radius: 5px;margin-bottom: 20px;">
+                    </li>
+                    
+                  </ul>
+                </p>
+              </div>
+            </div>
+  
+            <div class="dropdown-js not-first">
+              <button class="bloc-top">
+                <span>Modifier le style css</span>
+                <img src="https://cdn.discordapp.com/attachments/785188133419221022/813225450352148489/deply-img.png" alt="deply">
+              </button>
+              <div class="bloctext">
+                <p class="text-center">
+                  Afin de modifier le style d'un element du DOM, on utilise la méthode <span style="color: rgb(151, 0, 0);">style</span> suivi de l'attribut qu'on veut modifier. 
+                  </br>
+                  <img src="https://media.discordapp.net/attachments/785188184115511346/813336367593553930/unknown.png" style="border: 2px solid black;margin-top: 1%;border-radius: 5px;margin-bottom: 20px;">
+                  </br>
+                  On peut egalement lui rajouter une classe avec du contenu ou l'enlever en utilisant <span style="color: rgb(151, 0, 0);">classList</span>
+                  </br>
+                  <img src="https://cdn.discordapp.com/attachments/785188184115511346/813337107581239326/unknown.png" style="border: 2px solid black;margin-top: 1%;border-radius: 5px;margin-bottom: 20px;">
+                </p>
+              </div>
+            </div>
+            <div class="dropdown-js not-first">
+              <button class="bloc-top">
+                <span>Les events js</span>
+                <img src="https://cdn.discordapp.com/attachments/785188133419221022/813225450352148489/deply-img.png" alt="deply">
+              </button>
+              <div class="bloctext">
+                <p class="text-center">
+                  Les évenements en JavaScript vous permetteront d'écouter un evenements pour executer un code grâce à la fonction <span style="color: rgb(151, 0, 0);">addEventListener()</span>
+                  </br>
+                  <img src="https://media.discordapp.net/attachments/785188184115511346/813338336658718720/unknown.png" style="border: 2px solid black;margin-top: 1%;border-radius: 5px;margin-bottom: 20px;">
+                  </br>
+                  Vous pourrez voir les events proposé par JavaScript <a href="https://developer.mozilla.org/fr/docs/Web/Events" style="font-size: 1em;">ici</a>
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/main.js"></script>
+
+    <footer class="container-fluid">
+      <script>
+        document.write(copyright);
+      </script>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,508 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+/* Fichier de style*/
+*{
+  scroll-behavior: smooth;
+}
+/* *{
+  cursor: none;
+} */
+br {
+  display: block;
+  margin: 1px 0;
+}
+
+body {
+  background-image: url("https://cdn.discordapp.com/attachments/785188133419221022/805037321425649664/workspace.png");
+  background-repeat: no-repeat;
+  background-size: 100% 1000px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(51, 109, 255);
+  border-radius: 3em;
+}
+/* .cursor {
+  width: 20px;
+  height: 20px;
+  border: 4px double white;
+  z-index: 90000;
+  border-radius: 50%;
+  position: absolute;
+  
+  pointer-events: none;
+}
+.cursor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 5px;
+  background: gold;
+  border-radius: 50%;
+  z-index: 89999;
+} */
+
+
+/* header bar */
+#header-bar {
+  background-color: none;
+  min-height: 67px;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: content-box;
+  position: sticky;
+  position: fixed;
+
+  transition: background-color 1s, box-shadow 1s;
+}
+#logo-head {
+  margin-left: 13%;
+  display: none;
+}
+.visible {
+  display: block;
+}
+
+.opacity-reducer {
+  opacity: 1;
+  box-shadow: 0 0 10px 0 #2a3246;
+  background-color: #5a81f5;
+  transition: background-color 1s, box-shadow 1s;
+}
+
+#header-items {
+  margin-left: 5%;
+}
+#header-items li {
+  margin-left: 5%;
+}
+
+
+li {
+  list-style: none;
+}
+li.volontary{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  text-align: left;
+  max-width: 20% ;
+  margin-left: 40%;
+  list-style-type: circle;
+}
+
+.li-items {
+  margin-left: 8%;
+  color: white;
+  font-size: 140%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1.2px;
+}
+a {
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1.2px;
+}
+
+.background-visible {
+  background-color: #3a455e;
+}
+.dropdown-menu {
+  background-color: #3a455e00;
+  border: none;
+}
+.dropdown-item:hover {
+  background: none;
+}
+.dropdown-item:focus {
+  background: none;
+}
+
+.nav-item a {
+  color: white;
+}
+
+#header-button {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  background-color: #5a81f5;
+  border: none;
+  border-radius: 3em;
+  min-width: 120px;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
+  margin-right: 16%;
+  margin-left: 17%;
+}
+#header-button:hover {
+  transition-duration: 0.6s;
+  background-color: #4f7bff;
+}
+#header-button:focus {
+  box-shadow: 0 0 0 0.25rem #4266d1;
+}
+#bold {
+  color: rgb(180, 178, 178);
+}
+
+/* doc */
+
+#sheet {
+  background-color: rgb(134, 165, 251);
+  margin-top: 720px;
+  padding-top: 2%;
+  padding-bottom: 10px;
+}
+.sheet-title {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-left: 15px;
+  padding-left: 4px;
+  left: 15px;
+  border-radius: 3%;
+  border-left: 5px solid black;
+}
+#summary {
+  padding-left: 90%;
+}
+
+#search-bar {
+  padding-left: 70%;
+}
+#search-button {
+  margin-top: 10px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+}
+#search-button:hover {
+  transition-duration: 0.6s;
+  background-color: rgb(231, 230, 230);
+}
+
+#input-search {
+  overflow: hidden;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  bottom: 12px;
+  max-width: 160px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  transition: all 1s ease;
+}
+#input-search:hover {
+  background-color: #515c7a;
+  transition-duration: 0.5s;
+  box-shadow: 0 0 10px 0 #2a3246;
+}
+#input-search::placeholder {
+  color: rgb(219, 219, 219);
+  opacity: 1;
+}
+#li-doc {
+  padding-top: 10%;
+  padding-bottom: 50px;
+
+}
+#li-doc h4,p {
+  font-size: 1.3em;
+  color: rgb(255, 255, 255);
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  letter-spacing: 2px;
+}
+#li-doc h4{
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  max-width: 40%;
+}
+
+#li-doc p,
+a {
+  color: white;
+  text-decoration: none;
+  font-size: medium;
+}
+#li-doc a {
+  border-bottom: 1px solid white;
+}
+#li-doc p {
+  margin-left: 7%;
+  padding-left: 0.5%;
+  border-left: 4px solid white;
+}
+#li-doc ul{
+  margin-left: 30%;
+  margin-top: -40px;
+}
+
+/* footer */
+footer {
+  color: black;
+  margin-bottom: -20px;
+  margin-top: 0px;
+  box-shadow: 2px 5px 10px 0 #ebebeb;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: #515c7a;
+  font-size: 0.7em;
+  z-index: -11;
+  padding-right: 0%;
+}
+footer p {
+  text-align: center;
+  font-family: adobe-clean, Source Sans Pro, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, sans-serif;
+  color: black;
+  margin-left: 20%;
+}
+footer.center p{
+  margin-left: 0px;
+}
+
+
+/* js.html */
+
+#title-Js {
+  background-color: #5a81f5b4;
+  text-align: center;
+  margin-top: 83px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: white;
+}
+
+#title-Js button {
+  border-color: white;
+  color: white;
+}
+#title-Js button:focus {
+  box-shadow: 0 0 0 0.25rem white;
+}
+#title-Js button:hover {
+  background-color: white;
+  color: gray;
+}
+
+#sheet-js {
+  box-shadow: -1px -12px 15px 0px rgba(0, 0, 0, 0.47);
+  margin-top: 720px;
+  background-color: rgb(134, 165, 251);
+  text-align: center;
+  min-height: 660px;
+}
+#sheet-js p {
+  color: #212529;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#sheet-js div {
+  padding-top: 3%;
+  max-width: 90%;
+  margin-left: 5%;
+}
+#sheet-js div p {
+  margin-top: 5%;
+
+}
+
+.fs-7 {
+  font-size: 0.75rem !important;
+}
+
+h1 span {
+  position: relative;
+}
+
+.medias {
+  position: absolute;
+  right: 3.3%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bulle a img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+  cursor: pointer;
+  background-color: #86a5fb;
+}
+.exemple {
+  background-color: white;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-45%);
+  left: 3%;
+  min-height: 50%;
+  min-width: 35%;
+  max-width: 35%;
+  border: 2px solid black;
+  border-radius: 2em;
+  box-shadow: 3px 1px 16px 2px rgba(0, 0, 0, 0.8);
+}
+.exemple p {
+  width: 100%;
+  margin-top: 2%;
+  color: #1f1e1e;
+  font-size: 1.3rem;
+}
+.bloc-present {
+  margin-bottom: 1%;
+}
+.bloc-present p{
+  font-size: 1.2em;
+}
+
+.dropdown-js {
+  border: 2px solid #4473ff;
+  position: relative;
+  max-width: 100%;
+  height: 50px;
+  margin: 100px auto;
+  color: #f1f1f1;
+  background: #5a81f5;
+  transition: height 0.4s ease-in-out;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.bloc-top {
+  border: none;
+  margin-top: -39px;
+  display: block;
+  width: 100%;
+  outline: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5a81f5;
+  color: #f1f1f1;
+  cursor: pointer;
+  position: absolute;
+  top: 47px;
+  left: 0;
+  width: 100%;
+  padding: 0 5%;
+}
+
+.bloc-top img {
+  width: 30px;
+  height: 30px;
+}
+.bloc-top:focus{
+  outline: none;
+  border: none;
+}
+.bloctext{
+  display: none;
+}
+.text-center{
+  padding-bottom: 30px;
+}
+.not-first{
+  margin-top: -105px;
+}
+
+
+
+
+@media screen and (max-width: 1473px){
+  body{
+    background: url("https://cdn.discordapp.com/attachments/785188133419221022/816091803534229514/workspace-little-pc-screen.png") no-repeat;
+    background-size: 100% 1000px;
+  }
+  #sheet-js, #sheet{
+    margin-top: 600px;
+  }
+  .exemple{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 990px){
+  
+  body{
+    background: url('https://cdn.discordapp.com/attachments/785188133419221022/816088795619131392/workspace-tablette.png') no-repeat;
+  }
+  #sheet-js, #sheet{
+    margin-top: 500px;
+  }
+  .navbar-light .navbar-toggler{
+    border-color: #5a81f5;
+    }
+  .navbar-light .navbar-toggler-icon{
+    background-image: url("https://cdn.discordapp.com/attachments/785188133419221022/816085358528692245/buttondrop.png");
+  }
+}
+
+@media screen and (max-width: 640px){
+  body{
+    background: url('https://cdn.discordapp.com/attachments/785188133419221022/816082333265690665/workspace-phone.png') no-repeat;
+    background-size: 100% 1000px;
+  }
+  .medias {
+    right: 48%;
+    transform: translate(37%, -50%);
+    flex-direction: row;
+  }
+  .bulle{
+    margin-left: 10%;
+    margin-right: 10%;
+    
+  }
+  .bulle a img{
+    border: 1px solid white;
+  }
+  .navbar-light .navbar-toggler{
+    border-color: #5a81f5;
+    }
+  .navbar-light .navbar-toggler-icon{
+    background-image: url("https://cdn.discordapp.com/attachments/785188133419221022/816085358528692245/buttondrop.png");
+  }
+  #search-bar{
+    position: absolute;
+    right: 40%;
+    margin-top: 35%;
+  }
+  #sheet-js, #sheet{
+    margin-top: 700px;
+  }
+
+}

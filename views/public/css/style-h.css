@@ -1,0 +1,195 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+/* login sheet */
+body{
+    background-image: url("https://cdn.discordapp.com/attachments/785188133419221022/805037321425649664/workspace.png");
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+}
+
+#login-sheet{
+    padding: 7%;
+    padding-bottom: 4%;
+    background-color: #B3C5F4;  
+    text-align: center;
+    box-shadow: 7px 7px 14px -2px #1f2431;
+    border-radius: 2%;
+}
+.connect-items{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #30394F;
+    transition-duration: 1s;
+    outline: none;
+    cursor: none;
+
+}
+.connect-items:hover{
+    background-color: #6678a7;
+    transition-duration: 1s;
+    
+}
+    
+#login-sheet h1{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    border-bottom: 6px solid #30394F;
+    text-align: left;
+    max-width: 50%;
+}
+#password-id{
+    margin-top: 5%;
+}
+#email-id{
+    margin-top: 20%;
+}
+.connect-items::placeholder{
+    color: white;
+    font-size: 120%;
+}
+
+.i-for-connect{
+    margin-left: -10%;
+    font-size: 170%;
+    padding-right: 3%;
+}
+.btn-connect-login{
+    margin-top: 20%;
+    color: #30394F;
+    padding-right: 20%;
+    padding-left: 20%;
+    border: 2.7px solid #30394F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+    transition-duration: 0.5s;
+}
+.btn-connect-login:hover{
+    transition-duration: 0.4s;
+    background-color: #30394F;
+    border-color: #30394F;
+}
+.btn-connect-login:focus{
+    box-shadow:0 0 0 .25rem rgb(70, 83, 116);
+}
+#login-sheet a{
+    font-size: 80%;
+}
+
+#return-button-login input{
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    color: white;
+    background-color:  #6678a7;
+    border: none;
+}
+.background-visible {
+    background-color: #3a455e;
+}
+
+/* register */
+#register-sheet{
+    padding: 7%;
+    padding-bottom: 4%;
+    background-color: #B3C5F4;  
+    text-align: center;
+    box-shadow: 7px 7px 14px -2px #1f2431;
+    border-radius: 2%;
+}
+.connect-items{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #30394F;
+    transition-duration: 1s;
+    outline: none;
+    cursor: none;
+}
+.connect-items:hover{
+    background-color: #6678a7;
+    transition-duration: 1s;
+    
+}
+#register-sheet h1{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    border-bottom: 6px solid #30394F;
+    text-align: left;
+    max-width: 70%;
+}
+#username-id{
+    margin-top: 20%;
+}
+#password-id{
+    margin-top: 15%;
+}
+#email-id{
+    margin-top: 20%;
+}
+#confirmpassword-id{
+    margin-top: 20%;
+}
+.connect-items::placeholder{
+    color: white;
+    font-size: 120%;
+}
+
+.i-for-connect{
+    margin-left: -10%;
+    font-size: 170%;
+    padding-right: 3%;
+}
+.btn-connect-login{
+    margin-top: 20%;
+    color: #30394F;
+    padding-right: 20%;
+    padding-left: 20%;
+    border: 2.7px solid #30394F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+    transition-duration: 0.5s;
+}
+.btn-connect-login:hover{
+    transition-duration: 0.4s;
+    background-color: #30394F;
+    border-color: #30394F;
+}
+.btn-connect-login:focus{
+    box-shadow:0 0 0 .25rem rgb(70, 83, 116);
+}
+#register-sheet a{
+    font-size: 80%;
+}
+#return-button-register input{
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    color: black;
+    background-color:  #6678a7;
+    border: none;
+}
+.error_msg{
+    font-size: 15px;
+    color: #f74040;
+    margin-top: 20%;
+    display: none;
+
+}
+
+@media screen and (max-width: 1473px){
+    body{
+      background: url("https://cdn.discordapp.com/attachments/785188133419221022/816091803534229514/workspace-little-pc-screen.png") no-repeat;
+      background-size: 100% 1000px;
+    }
+}
+
+@media screen and (max-width: 990px){
+  
+    body{
+      background: url('https://cdn.discordapp.com/attachments/785188133419221022/816088795619131392/workspace-tablette.png') no-repeat;
+    }
+}
+
+@media screen and (max-width: 640px){
+    body{
+      background: url('https://cdn.discordapp.com/attachments/785188133419221022/816082333265690665/workspace-phone.png') no-repeat;
+      background-size: 100% 1000px;
+    }
+}
