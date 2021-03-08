@@ -2,16 +2,11 @@ var copyright = "Copyright © 2021 BIABIANY, PHIBEL, LEMAITRE";
 
 // event when user is scrolling
 window.addEventListener("scroll", () => {
-  dropdown = document.getElementById("dropdown-header"); //get the dropdown id
-  img = document.getElementById("logo-head");
   element = document.getElementById("header-bar"); //get the header bar
   if (window.scrollY > 970) {
-    img.classList.add("background-visible"); // add the class
-    img.classList.add("visible"); //add a second class
+  
     element.classList.add("opacity-reducer"); //add the class opacity-reducer
   } else {
-    img.classList.remove("background-visible"); //rm the class
-    img.classList.remove("visible"); //rm a second class
     element.classList.remove("opacity-reducer"); //rm the opacity reducer
   }
 });
@@ -172,6 +167,29 @@ let toggle = 0; //make a toggle
     }
   });
 });
+
+document.addEventListener("scroll", ()=>{
+  let bloc = document.querySelectorAll('.dropdown-buttons')
+
+  if(window.scrollY > 700){
+    const TL = gsap.timeline({ pause: true });
+
+    // creation des animation, sec, parametre css
+    TL
+      .staggerTo(bloc,1,{ right: 0, opacity: 1, ease: "power2.out" },0.3)
+
+    TL.play();
+  }else{
+    const TL = gsap.timeline({ pause: true });
+
+    // creation des animation, sec, parametre css
+    TL
+      .staggerTo(bloc,1.7,{ right: -150, opacity: 0, ease: "power2.out" },0.3)
+
+    TL.play();
+  }
+
+})
 
 
 // function to open the login page

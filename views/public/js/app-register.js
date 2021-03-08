@@ -29,7 +29,7 @@ document
       };
 
       //connection au port du backend pour y envoyer le formulaire
-      fetch("http://localhost:3000/signup", {
+      fetch("http://claquetteuuuh.alwaysdata.net/signup", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'

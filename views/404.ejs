@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NSI | 404</title>
+    <link rel="shortcut icon" href="https://media.discordapp.net/attachments/785188133419221022/813225879009624074/logo.png" />
+    <link rel="stylesheet" href="public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <nav id="header-bar" class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="header-items">
+            <li class="nav-item">
+              <a
+                class="nav-link active li-items"
+                aria-current="page"
+                href="/"
+                >Main</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link li-items" href="documentation">Doc</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle li-items"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Languages
+              </a>
+              <ul
+                id="dropdown-header"
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item li-items" href="javascript"
+                    >JavaScript</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item li-items" href="python"
+                    >Python</a
+                  >
+                </li>
+              </ul>
+            </li>
+            
+          </ul>
+          <button
+            onclick="callConnect()"
+            class="btn btn-light"
+            id="header-button"
+          >
+            Connexion
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="not-found">
+        <div class="text-not-found">
+            <h1>Cette page n'existe pas...</h1>
+            <p>La page que vous recherchez semble introuvable. Sans détour, il n'est point de voyage... Retournez à la page d'accueil.</p>
+            <a href="/" class="goto-main"><button type="button">Retour à l'accueil</button></a>
+        </div>
+        <div class="img">
+            <h1>404</h1>
+            <img src="https://cdn.discordapp.com/attachments/785188133419221022/818209564502655036/sad.png" alt="sad emoji" width="240">
+        </div>
+
+    </div>
+    <script src="public/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -20,7 +20,7 @@ document.getElementById("connect-inputs").addEventListener("submit", function(e)
             password : values[1]
         };
 
-        fetch('http://localhost:3000/login', {
+        fetch('http://claquetteuuuh.alwaysdata.net/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -14,12 +14,12 @@ app.use(express.urlencoded({ extended:false }))
 app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader(
-      "Access-Control-Allow-Headers",
-      "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+        "Access-Control-Allow-Methods",
+        "GET, POST, PUT, DELETE, PATCH, OPTIONS"
     );
     res.setHeader(
-      "Access-Control-Allow-Methods",
-      "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
     );
     next();
 });
@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 //connection a la database mongoDb
 const dBURI = 'mongodb+srv://Claquette:azerty123@cluster0.hdln3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 mongoose.connect(dBURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true})
-    .then((result)=>app.listen(3000))
+    .then((result)=>app.listen(8101))
     .catch((err)=> console.log(err));
 
 // EJS
@@ -40,13 +40,15 @@ app.set('public engine', './public')
 app.use("/public", express.static(__dirname + "/views/public"))
 
 // routes
-app.get('/', (req, res)=> res.render('home.ejs'));
+app.get('/', (req, res)=> res.render('index.ejs'));
 app.get('/javascript', (req, res)=> res.render('js.ejs'))
 app.get('/documentation', (req, res)=> res.render('docu.ejs'))
 app.get('/login', (req, res )=> res.render('login.ejs'))
 app.get('/register', (req, res )=> res.render('register.ejs'))
+app.get('/python', (req, res)=> res.render('python.ejs'))
+app.get('*', ((req, res) => res.render('404.ejs'))) //404 pages
 
-// root signup
+// route signup
 app.post('/signup', (req, res, next)=>{
     console.log(req.body)
     bcrypt.hash(req.body.password, 10) //hashage du mdp avec bcrypt
@@ -64,7 +66,7 @@ app.post('/signup', (req, res, next)=>{
         .catch(error => res.status(500).json({error}))
 })
 
-// root login
+// route login
 app.post('/login', (req, res, next)=> {
     User.findOne({ email: req.body.email})
         .then( user =>{

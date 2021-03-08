@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSI | Python</title>
+    <link rel="shortcut icon" href="https://media.discordapp.net/attachments/785188133419221022/813225879009624074/logo.png" />
+    <link rel="stylesheet" href="public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="public/css/style-b.css" />
+  </head>
+  <body>
+    <nav id="header-bar" class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <img
+          src="/sources/logo-head.png"
+          alt=""
+          width="140px"
+          height="45px"
+          id="logo-head"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="header-items">
+            <li class="nav-item">
+              <a
+                class="nav-link active li-items"
+                aria-current="page"
+                href="/"
+                >Main</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link li-items" href="documentation">Doc</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle li-items"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Languages
+              </a>
+              <ul
+                id="dropdown-header"
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item li-items" href="javascript"
+                    >JavaScript</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item li-items" href="python"
+                    >Python</a
+                  >
+                </li>
+              </ul>
+            </li>
+            
+          </ul>
+          <button
+            onclick="callConnect()"
+            class="btn btn-light"
+            id="header-button"
+          >
+            Connexion
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div id="global-page">
+      <div class="container-fluid" id="title-python">
+        <h1>
+          <span>Apprendre </span>
+          <span>le </span>
+          <span>Python</span>
+        </h1>
+      </div>
+
+      <ul class="medias">
+        <li class="bulle">
+          <a href="https://github.com/Claquetteuuuh/" target="_blank">
+            <img
+              src="https://cdn.discordapp.com/attachments/785188133419221022/813224986349142036/github-logo.png"
+              alt="logo de github"
+              class="media-logo"
+            />
+          </a>
+        </li>
+
+        <li class="bulle">
+          <a href="https://discord.gg/WAYzbCteNC" target="_blank">
+            <img
+              src="https://cdn.discordapp.com/attachments/785188133419221022/813224990711087154/discord-logo.png"
+              alt="logo de discord"
+              class="media-logo"
+            />
+          </a>
+        </li>
+
+        <li class="bulle">
+          <a href="https://www.instagram.com/404/" target="_blank">
+            <img
+              src="https://media.discordapp.net/attachments/785188133419221022/813224987397849098/insta-logo.png?width=675&height=675"
+              alt="logo de instagram"
+              class="media-logo"
+            />
+          </a>
+        </li>
+      </ul>
+      <div class="exemple-py">
+        <p></p>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="sheet-py">
+      <h1 id="yes"></h1>
+      <div id="pqpython-video">
+        <iframe width="400" height="225" src='public/sources/pqpython.mp4' muted allowfullscreen></iframe>
+      </div>
+      
+
+      <p id="sheet-py p">
+        <br>
+        Python est le langage de programmation open source le plus employé par les informaticiens. 
+        Ce langage s’est propulsé en tête de la gestion d’infrastructure, d’analyse de données ou 
+        dans le domaine du développement de logiciels. En effet, parmi ses qualités, Python permet 
+        notamment aux développeurs de se concentrer sur ce qu’ils font plutôt que sur la manière 
+        dont ils le font. Il a libéré les développeurs des contraintes de formes qui occupaient leur 
+        temps avec les langages plus anciens. Ainsi, développer du code avec Python est plus rapide qu’avec d’autres langages.
+      </p>
+      <p>A quoi sert le langage Python ?
+        Les principales utilisations de Python par les développeurs sont : 
+        <br>
+         -  La programmation d’applications 
+         <br>
+         -La création de services web
+         <br>
+         -La génération de code  
+         <br>
+         -La métaprogrammation.
+         <br>
+        Techniquement, ce langage servira surtout pour le scripting et l’automatisation (interaction avec les navigateurs web).</p>
+
+
+        <div id="codeex">
+        <img src="https://cdn.discordapp.com/attachments/785188184115511346/817508297866608700/exemple_de_code.JPG" alt="exemple de code">
+        </div>
+
+        <p>
+          <br>
+          Voici un exemple de code possible en python permettant de creer un jeu où l'on doit deviner le nombre
+        </p>
+
+
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/app-b.js"></script>
+
+    <footer>
+      <p>
+        <script>
+          document.write(copyright);
+        </script>
+      </p>
+    </footer>
+  </body>
+</html>
